@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios";
 import { common } from "./common.js";
 
-const axiosDefaultsHeaders = function (token) {
+let axiosDefaultsHeaders = function (token) {
   if (token) {
     debugger;
     localStorage.setItem("x-jwt-token", token);
